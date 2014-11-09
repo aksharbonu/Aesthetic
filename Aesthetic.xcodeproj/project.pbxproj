@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1704C2351A00A4F800A72FB4 /* WardrobeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1704C2341A00A4F800A72FB4 /* WardrobeViewController.m */; };
+		1704C2381A00ABB600A72FB4 /* ClothingItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1704C2371A00ABB600A72FB4 /* ClothingItemCell.m */; };
+		1752008C19FDDFEB004F2B64 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1752008B19FDDFEB004F2B64 /* LoginViewController.m */; };
+		1752008F19FDF0CC004F2B64 /* SwipeCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1752008E19FDF0CC004F2B64 /* SwipeCardViewController.m */; };
+		175200991A003A2B004F2B64 /* ClothingItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 175200981A003A2B004F2B64 /* ClothingItemView.m */; };
+		176838581A09A99700BF6D6D /* RLMClothingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 176838571A09A99700BF6D6D /* RLMClothingItem.m */; };
+		1768385B1A09A9A800BF6D6D /* RLMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1768385A1A09A9A800BF6D6D /* RLMUser.m */; };
+		1768385E1A09B37E00BF6D6D /* RLMClothingTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1768385D1A09B37E00BF6D6D /* RLMClothingTag.m */; };
+		17BA1C3819FA2BE1004CBA00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BA1C3719FA2BE1004CBA00 /* main.m */; };
+		17BA1C3B19FA2BE1004CBA00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BA1C3A19FA2BE1004CBA00 /* AppDelegate.m */; };
+		17BA1C3E19FA2BE1004CBA00 /* Aesthetic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17BA1C3C19FA2BE1004CBA00 /* Aesthetic.xcdatamodeld */; };
+		17BA1C4419FA2BE1004CBA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BA1C4219FA2BE1004CBA00 /* Main.storyboard */; };
+		17BA1C4619FA2BE1004CBA00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BA1C4519FA2BE1004CBA00 /* Images.xcassets */; };
+		17BA1C4919FA2BE1004CBA00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BA1C4719FA2BE1004CBA00 /* LaunchScreen.xib */; };
+		17BA1C5519FA2BE1004CBA00 /* AestheticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BA1C5419FA2BE1004CBA00 /* AestheticTests.m */; };
+		2ECE83CCD4879353232F88C0 /* libPods-Aesthetic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EFE2FE9C3581EC2EC89872 /* libPods-Aesthetic.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17BA1C4F19FA2BE1004CBA00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17BA1C2A19FA2BE1004CBA00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17BA1C3119FA2BE1004CBA00;
+			remoteInfo = Aesthetic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1704C2331A00A4F800A72FB4 /* WardrobeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WardrobeViewController.h; sourceTree = "<group>"; };
+		1704C2341A00A4F800A72FB4 /* WardrobeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WardrobeViewController.m; sourceTree = "<group>"; };
+		1704C2361A00ABB600A72FB4 /* ClothingItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothingItemCell.h; sourceTree = "<group>"; };
+		1704C2371A00ABB600A72FB4 /* ClothingItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothingItemCell.m; sourceTree = "<group>"; };
+		1752007419FB5FA2004F2B64 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1752007619FB5FAF004F2B64 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1752007819FB5FB8004F2B64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1752007A19FB5FC1004F2B64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1752007C19FB5FCC004F2B64 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1752007E19FB5FD6004F2B64 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1752008019FB5FDE004F2B64 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1752008219FB5FE7004F2B64 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1752008419FB5FF3004F2B64 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1752008619FB5FFC004F2B64 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1752008A19FDDFEB004F2B64 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1752008B19FDDFEB004F2B64 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1752008D19FDF0CC004F2B64 /* SwipeCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeCardViewController.h; sourceTree = "<group>"; };
+		1752008E19FDF0CC004F2B64 /* SwipeCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeCardViewController.m; sourceTree = "<group>"; };
+		175200971A003A2B004F2B64 /* ClothingItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothingItemView.h; sourceTree = "<group>"; };
+		175200981A003A2B004F2B64 /* ClothingItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothingItemView.m; sourceTree = "<group>"; };
+		176838561A09A99700BF6D6D /* RLMClothingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMClothingItem.h; sourceTree = "<group>"; };
+		176838571A09A99700BF6D6D /* RLMClothingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMClothingItem.m; sourceTree = "<group>"; };
+		176838591A09A9A800BF6D6D /* RLMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMUser.h; sourceTree = "<group>"; };
+		1768385A1A09A9A800BF6D6D /* RLMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMUser.m; sourceTree = "<group>"; };
+		1768385C1A09B37E00BF6D6D /* RLMClothingTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMClothingTag.h; sourceTree = "<group>"; };
+		1768385D1A09B37E00BF6D6D /* RLMClothingTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMClothingTag.m; sourceTree = "<group>"; };
+		17BA1C3219FA2BE1004CBA00 /* Aesthetic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aesthetic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17BA1C3619FA2BE1004CBA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17BA1C3719FA2BE1004CBA00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17BA1C3919FA2BE1004CBA00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17BA1C3A19FA2BE1004CBA00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17BA1C3D19FA2BE1004CBA00 /* Aesthetic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aesthetic.xcdatamodel; sourceTree = "<group>"; };
+		17BA1C4319FA2BE1004CBA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17BA1C4519FA2BE1004CBA00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17BA1C4819FA2BE1004CBA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		17BA1C4E19FA2BE1004CBA00 /* AestheticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AestheticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17BA1C5319FA2BE1004CBA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17BA1C5419FA2BE1004CBA00 /* AestheticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AestheticTests.m; sourceTree = "<group>"; };
+		38EFE2FE9C3581EC2EC89872 /* libPods-Aesthetic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aesthetic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4322BBF1CD20EDE519807B /* Pods-Aesthetic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aesthetic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aesthetic/Pods-Aesthetic.debug.xcconfig"; sourceTree = "<group>"; };
+		CFA4C47A75BF3816C6B7DD06 /* Pods-Aesthetic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aesthetic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aesthetic/Pods-Aesthetic.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17BA1C2F19FA2BE1004CBA00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECE83CCD4879353232F88C0 /* libPods-Aesthetic.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17BA1C4B19FA2BE1004CBA00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17BA1C2919FA2BE1004CBA00 = {
+			isa = PBXGroup;
+			children = (
+				17BA1C3419FA2BE1004CBA00 /* Aesthetic */,
+				17BA1C5119FA2BE1004CBA00 /* AestheticTests */,
+				17BA1C3319FA2BE1004CBA00 /* Products */,
+				F16A18DF0754F0BB9DBE0DD9 /* Pods */,
+				45963FDA79E754B410A38440 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17BA1C3319FA2BE1004CBA00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17BA1C3219FA2BE1004CBA00 /* Aesthetic.app */,
+				17BA1C4E19FA2BE1004CBA00 /* AestheticTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17BA1C3419FA2BE1004CBA00 /* Aesthetic */ = {
+			isa = PBXGroup;
+			children = (
+				17BA1C3919FA2BE1004CBA00 /* AppDelegate.h */,
+				17BA1C3A19FA2BE1004CBA00 /* AppDelegate.m */,
+				1752008A19FDDFEB004F2B64 /* LoginViewController.h */,
+				1752008B19FDDFEB004F2B64 /* LoginViewController.m */,
+				175200971A003A2B004F2B64 /* ClothingItemView.h */,
+				175200981A003A2B004F2B64 /* ClothingItemView.m */,
+				1752008D19FDF0CC004F2B64 /* SwipeCardViewController.h */,
+				1752008E19FDF0CC004F2B64 /* SwipeCardViewController.m */,
+				17BA1C4219FA2BE1004CBA00 /* Main.storyboard */,
+				1704C2361A00ABB600A72FB4 /* ClothingItemCell.h */,
+				1704C2371A00ABB600A72FB4 /* ClothingItemCell.m */,
+				1704C2331A00A4F800A72FB4 /* WardrobeViewController.h */,
+				1704C2341A00A4F800A72FB4 /* WardrobeViewController.m */,
+				17BA1C4519FA2BE1004CBA00 /* Images.xcassets */,
+				17BA1C4719FA2BE1004CBA00 /* LaunchScreen.xib */,
+				17BA1C3C19FA2BE1004CBA00 /* Aesthetic.xcdatamodeld */,
+				17BA1C3519FA2BE1004CBA00 /* Supporting Files */,
+				176838561A09A99700BF6D6D /* RLMClothingItem.h */,
+				176838571A09A99700BF6D6D /* RLMClothingItem.m */,
+				176838591A09A9A800BF6D6D /* RLMUser.h */,
+				1768385A1A09A9A800BF6D6D /* RLMUser.m */,
+				1768385C1A09B37E00BF6D6D /* RLMClothingTag.h */,
+				1768385D1A09B37E00BF6D6D /* RLMClothingTag.m */,
+			);
+			path = Aesthetic;
+			sourceTree = "<group>";
+		};
+		17BA1C3519FA2BE1004CBA00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17BA1C3619FA2BE1004CBA00 /* Info.plist */,
+				17BA1C3719FA2BE1004CBA00 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17BA1C5119FA2BE1004CBA00 /* AestheticTests */ = {
+			isa = PBXGroup;
+			children = (
+				17BA1C5419FA2BE1004CBA00 /* AestheticTests.m */,
+				17BA1C5219FA2BE1004CBA00 /* Supporting Files */,
+			);
+			path = AestheticTests;
+			sourceTree = "<group>";
+		};
+		17BA1C5219FA2BE1004CBA00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17BA1C5319FA2BE1004CBA00 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45963FDA79E754B410A38440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1752008619FB5FFC004F2B64 /* SystemConfiguration.framework */,
+				1752008419FB5FF3004F2B64 /* StoreKit.framework */,
+				1752008219FB5FE7004F2B64 /* Security.framework */,
+				1752008019FB5FDE004F2B64 /* QuartzCore.framework */,
+				1752007E19FB5FD6004F2B64 /* MobileCoreServices.framework */,
+				1752007C19FB5FCC004F2B64 /* libz.dylib */,
+				1752007A19FB5FC1004F2B64 /* CoreLocation.framework */,
+				1752007819FB5FB8004F2B64 /* CoreGraphics.framework */,
+				1752007619FB5FAF004F2B64 /* CFNetwork.framework */,
+				1752007419FB5FA2004F2B64 /* AudioToolbox.framework */,
+				38EFE2FE9C3581EC2EC89872 /* libPods-Aesthetic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F16A18DF0754F0BB9DBE0DD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E4322BBF1CD20EDE519807B /* Pods-Aesthetic.debug.xcconfig */,
+				CFA4C47A75BF3816C6B7DD06 /* Pods-Aesthetic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17BA1C3119FA2BE1004CBA00 /* Aesthetic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17BA1C5819FA2BE1004CBA00 /* Build configuration list for PBXNativeTarget "Aesthetic" */;
+			buildPhases = (
+				622DFD5FB8B5E09E677EC8E9 /* Check Pods Manifest.lock */,
+				17BA1C2E19FA2BE1004CBA00 /* Sources */,
+				17BA1C2F19FA2BE1004CBA00 /* Frameworks */,
+				17BA1C3019FA2BE1004CBA00 /* Resources */,
+				1B463A4250AB7B20A7592E3A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aesthetic;
+			productName = Aesthetic;
+			productReference = 17BA1C3219FA2BE1004CBA00 /* Aesthetic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17BA1C4D19FA2BE1004CBA00 /* AestheticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17BA1C5B19FA2BE1004CBA00 /* Build configuration list for PBXNativeTarget "AestheticTests" */;
+			buildPhases = (
+				17BA1C4A19FA2BE1004CBA00 /* Sources */,
+				17BA1C4B19FA2BE1004CBA00 /* Frameworks */,
+				17BA1C4C19FA2BE1004CBA00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17BA1C5019FA2BE1004CBA00 /* PBXTargetDependency */,
+			);
+			name = AestheticTests;
+			productName = AestheticTests;
+			productReference = 17BA1C4E19FA2BE1004CBA00 /* AestheticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17BA1C2A19FA2BE1004CBA00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = aksharbonu;
+				TargetAttributes = {
+					17BA1C3119FA2BE1004CBA00 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					17BA1C4D19FA2BE1004CBA00 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 17BA1C3119FA2BE1004CBA00;
+					};
+				};
+			};
+			buildConfigurationList = 17BA1C2D19FA2BE1004CBA00 /* Build configuration list for PBXProject "Aesthetic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17BA1C2919FA2BE1004CBA00;
+			productRefGroup = 17BA1C3319FA2BE1004CBA00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17BA1C3119FA2BE1004CBA00 /* Aesthetic */,
+				17BA1C4D19FA2BE1004CBA00 /* AestheticTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17BA1C3019FA2BE1004CBA00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BA1C4419FA2BE1004CBA00 /* Main.storyboard in Resources */,
+				17BA1C4919FA2BE1004CBA00 /* LaunchScreen.xib in Resources */,
+				17BA1C4619FA2BE1004CBA00 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17BA1C4C19FA2BE1004CBA00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B463A4250AB7B20A7592E3A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aesthetic/Pods-Aesthetic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		622DFD5FB8B5E09E677EC8E9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17BA1C2E19FA2BE1004CBA00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BA1C3B19FA2BE1004CBA00 /* AppDelegate.m in Sources */,
+				1752008F19FDF0CC004F2B64 /* SwipeCardViewController.m in Sources */,
+				176838581A09A99700BF6D6D /* RLMClothingItem.m in Sources */,
+				17BA1C3E19FA2BE1004CBA00 /* Aesthetic.xcdatamodeld in Sources */,
+				1704C2351A00A4F800A72FB4 /* WardrobeViewController.m in Sources */,
+				1704C2381A00ABB600A72FB4 /* ClothingItemCell.m in Sources */,
+				17BA1C3819FA2BE1004CBA00 /* main.m in Sources */,
+				1752008C19FDDFEB004F2B64 /* LoginViewController.m in Sources */,
+				1768385E1A09B37E00BF6D6D /* RLMClothingTag.m in Sources */,
+				1768385B1A09A9A800BF6D6D /* RLMUser.m in Sources */,
+				175200991A003A2B004F2B64 /* ClothingItemView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17BA1C4A19FA2BE1004CBA00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BA1C5519FA2BE1004CBA00 /* AestheticTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17BA1C5019FA2BE1004CBA00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17BA1C3119FA2BE1004CBA00 /* Aesthetic */;
+			targetProxy = 17BA1C4F19FA2BE1004CBA00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17BA1C4219FA2BE1004CBA00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17BA1C4319FA2BE1004CBA00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17BA1C4719FA2BE1004CBA00 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17BA1C4819FA2BE1004CBA00 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17BA1C5619FA2BE1004CBA00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17BA1C5719FA2BE1004CBA00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17BA1C5919FA2BE1004CBA00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4322BBF1CD20EDE519807B /* Pods-Aesthetic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Aesthetic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17BA1C5A19FA2BE1004CBA00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA4C47A75BF3816C6B7DD06 /* Pods-Aesthetic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Aesthetic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		17BA1C5C19FA2BE1004CBA00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AestheticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aesthetic.app/Aesthetic";
+			};
+			name = Debug;
+		};
+		17BA1C5D19FA2BE1004CBA00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AestheticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aesthetic.app/Aesthetic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17BA1C2D19FA2BE1004CBA00 /* Build configuration list for PBXProject "Aesthetic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BA1C5619FA2BE1004CBA00 /* Debug */,
+				17BA1C5719FA2BE1004CBA00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17BA1C5819FA2BE1004CBA00 /* Build configuration list for PBXNativeTarget "Aesthetic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BA1C5919FA2BE1004CBA00 /* Debug */,
+				17BA1C5A19FA2BE1004CBA00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17BA1C5B19FA2BE1004CBA00 /* Build configuration list for PBXNativeTarget "AestheticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BA1C5C19FA2BE1004CBA00 /* Debug */,
+				17BA1C5D19FA2BE1004CBA00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17BA1C3C19FA2BE1004CBA00 /* Aesthetic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17BA1C3D19FA2BE1004CBA00 /* Aesthetic.xcdatamodel */,
+			);
+			currentVersion = 17BA1C3D19FA2BE1004CBA00 /* Aesthetic.xcdatamodel */;
+			path = Aesthetic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 17BA1C2A19FA2BE1004CBA00 /* Project object */;
+}

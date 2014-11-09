@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ3-Tv-aQC">
+                                <rect key="frame" x="227" y="285" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RWq-UU-fm8"/>
+                                    <constraint firstAttribute="width" constant="146" id="yCh-Bz-5D2"/>
+                                </constraints>
+                                <state key="normal" title="Login With Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RWq-UU-fm8"/>
+                                        <exclude reference="yCh-Bz-5D2"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="loginButtonTouchHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vxc-qu-LMd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cQ3-Tv-aQC" secondAttribute="centerX" id="3sx-Bp-OKB"/>
+                            <constraint firstItem="cQ3-Tv-aQC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="265" id="4Df-Fa-rb4"/>
+                            <constraint firstAttribute="centerY" secondItem="cQ3-Tv-aQC" secondAttribute="centerY" id="Coc-3b-XW5"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cQ3-Tv-aQC" secondAttribute="bottom" constant="285" id="GUb-R6-e8t"/>
+                            <constraint firstItem="cQ3-Tv-aQC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="227" id="ImY-qi-XPZ"/>
+                            <constraint firstItem="cQ3-Tv-aQC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="211" id="Pis-xC-uQd"/>
+                            <constraint firstItem="cQ3-Tv-aQC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="265" id="T6e-Yo-HiO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cQ3-Tv-aQC" secondAttribute="trailing" constant="211" id="WGQ-ba-Cet"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cQ3-Tv-aQC" secondAttribute="bottom" constant="285" id="pm0-LQ-bRY"/>
+                            <constraint firstAttribute="trailing" secondItem="cQ3-Tv-aQC" secondAttribute="trailing" constant="227" id="wUv-nc-mp3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4Df-Fa-rb4"/>
+                                <exclude reference="ImY-qi-XPZ"/>
+                                <exclude reference="Pis-xC-uQd"/>
+                                <exclude reference="T6e-Yo-HiO"/>
+                                <exclude reference="WGQ-ba-Cet"/>
+                                <exclude reference="wUv-nc-mp3"/>
+                                <exclude reference="GUb-R6-e8t"/>
+                                <exclude reference="pm0-LQ-bRY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <segue destination="Rcu-Zv-Y50" kind="show" identifier="successfulFacebookLogin" id="C7H-Z5-aix"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="162"/>
+        </scene>
+        <!--Aesthetic-->
+        <scene sceneID="egL-t2-kcf">
+            <objects>
+                <viewController title="Aesthetic" id="ckH-yW-JF9" customClass="SwipeCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dgj-Iz-t2E"/>
+                        <viewControllerLayoutGuide type="bottom" id="RR9-FE-iAP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Sn-11-oLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Aesthetic" id="umG-hT-818">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="qGQ-M8-zeF">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="ckH-yW-JF9" id="KC7-cJ-sBt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Wardrobe" id="bgZ-en-lcH">
+                            <connections>
+                                <segue destination="FuD-4t-eQ4" kind="show" id="bZ3-EI-G61"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="EMd-et-h4w" kind="unwind" identifier="logoutToLoginScreen" unwindAction="unwindToLogin:" id="yiB-as-s0y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGz-tj-gSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="EMd-et-h4w" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="162"/>
+        </scene>
+        <!--Wardrobe-->
+        <scene sceneID="cdO-f6-gSU">
+            <objects>
+                <collectionViewController title="Wardrobe" id="FuD-4t-eQ4" customClass="WardrobeViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pHm-ah-2rn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XBa-Rs-wid">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClothingItem" id="R3K-SX-pWn" customClass="ClothingItemCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Via-W7-tRi">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="imageView" destination="Via-W7-tRi" id="XMY-eS-hSY"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="FuD-4t-eQ4" id="vgH-No-4iA"/>
+                            <outlet property="delegate" destination="FuD-4t-eQ4" id="j8z-3d-kid"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCK-ac-2fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2154" y="122"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="axc-rO-FPb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rcu-Zv-Y50" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SE5-xg-rQb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ckH-yW-JF9" kind="relationship" relationship="rootViewController" id="cU6-bM-WDC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aj-zn-Svz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="162"/>
+        </scene>
+    </scenes>
+</document>

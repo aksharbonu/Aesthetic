@@ -1,0 +1,30 @@
+PODS:
+  - Bolts (1.1.3)
+  - Facebook-iOS-SDK (3.19.0):
+    - Bolts (~> 1.0)
+  - MDCSwipeToChoose (0.2.1)
+  - Parse (1.4.2):
+    - Bolts (~> 1.1.3)
+  - ParseFacebookUtils (1.4.2):
+    - Facebook-iOS-SDK (~> 3.19.0)
+    - Parse (~> 1.4.2)
+  - Realm (0.87.1):
+    - Realm/Headers
+  - Realm/Headers (0.87.1)
+
+DEPENDENCIES:
+  - Facebook-iOS-SDK
+  - MDCSwipeToChoose
+  - Parse
+  - ParseFacebookUtils
+  - Realm
+
+SPEC CHECKSUMS:
+  Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
+  Facebook-iOS-SDK: cb7d74759d0b1ba546e6e6f1dde407b0d4e448d6
+  MDCSwipeToChoose: 54f7b1675eff182cdc46c582360c7fca4c766a67
+  Parse: fc9ceb6edbc6bb6a1a1f3c33f0db3293a6894f94
+  ParseFacebookUtils: 15b04623e6bf4bbea5d60460caff98943ad7351e
+  Realm: d2a10a60bbbd66c64ae8d839a378b88c68cf79bb
+
+COCOAPODS: 0.34.4
